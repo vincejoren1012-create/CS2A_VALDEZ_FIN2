@@ -1,0 +1,155 @@
+
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY DESIGN */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #6e8d52, #916705, #566703);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: #333;
+}
+
+/* MAIN CONTAINER */
+#registration,
+#loginSection,
+#grocerySection {
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(3, 39, 82, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    animation: fadeIn 0.6s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    text-align: center;
+    color: #120847;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    color: #09285d;
+    margin: 20px 0 12px;
+}
+
+/* LABELS */
+label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #221470;
+    margin-bottom: 7px;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 17px;
+    border: 1.5px solid #e0c4f7;
+    border-radius: 10px;
+    background-color: #faf7ff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #161388;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.12);
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0a1284, #0a1284);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0a1284, #0a1284);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(31, 59, 112, 0.25);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* GROCERY LIST */
+#grocerylist {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#grocerylist li {
+    background: #f3e8ff;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #1d246b;
+    color: #1b1d71;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    #registration,
+    #loginSection,
+    #grocerySection {
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
